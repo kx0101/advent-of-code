@@ -1,8 +1,6 @@
-struct Rule {
-    destination: i64,
-    source: i64,
-    range: i64,
-}
+pub mod share;
+
+use crate::share::Rule;
 
 fn part1(input: &str) -> i64 {
     let (seeds_str, maps_str) = input.split_once("\n\n").unwrap();
